@@ -11,5 +11,6 @@ target_include_directories(Engine PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include/")
 
 add_subdirectory("libs/glfw-3.4")
 add_subdirectory("libs/glad")
+add_subdirectory("libs/cglm")
 
-target_link_libraries(Engine PRIVATE glfw glad)
+target_link_libraries(Engine PRIVATE glfw glad cglm)
